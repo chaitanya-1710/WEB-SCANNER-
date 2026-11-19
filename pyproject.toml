@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "siteaudit-console"
+version = "0.1.0"
+description = "Inspect HTML form parameters and HTTP response headers from a terminal."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+siteaudit = "site_audit:main"
+
+[tool.setuptools]
+py-modules = ["site_audit"]
